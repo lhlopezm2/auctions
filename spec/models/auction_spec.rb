@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 RSpec.describe Auction, type: :model do
   let(:seller) {
     User.new(email: 'jane@doe.com', password: 'pw1234')
