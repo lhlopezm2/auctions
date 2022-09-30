@@ -12,7 +12,7 @@ class BiddingEngine
     if @bid.valid? && is_bigger?
       @bid.save
     else
-      @auction.errors.add(:bid, "must be bigger than the last bid on the auction")
+      @auction.errors.add(:bid, 'must be bigger than the last bid on the auction')
     end
   end
 
